@@ -32,6 +32,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
     public PostViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         LayoutInflater inflater=LayoutInflater.from(context);
         View view=inflater.inflate(R.layout.item_user_layout,viewGroup,false);
+        Toast.makeText(context, ""+i, Toast.LENGTH_SHORT).show();
         return new PostViewHolder(view);
     }
 
